@@ -1,5 +1,9 @@
 # on6-xp-s12-intro-bd
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c8acbd7c20a4ad06b8f28a46cda69c178476fc2e
 # ON6 - XP | Semana 12 | Banco de Dados | Introdução a Banco de Dados
 Semana 12 - Introdução a Banco de Dados
 
