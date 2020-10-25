@@ -1,0 +1,202 @@
+﻿// Exercícios
+use reprograma
+db.createCollection("mulheresmaravilhosas")
+
+// 1. Insira 1 novo registro conforme descrição abaixo:
+// nome = Carolina Maria de Jesus, localNascimento = Sacramento, profissao = Escritora, anoNascimento = 1914, bio =  Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país.
+
+db.mulheresmaravilhosas.insert({"nome":"Carolina Maria de Jesus", 
+"localNascimento":"Sacramento", 
+"profissao":"Escritora", 
+"anoNascimento":1914, 
+"bio":"Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país."})
+
+/*
+2. Insira 4 novos registros de uma só vez conforme descrições abaixo:
+nome = Maria Firmina dos Reis, localNascimento = São Luís, profissao = Escritora, anoNascimento = 1822, bio = Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura.
+nome = Antonieta de Barros,  localNascimento = Florianópolis, profissao = Professora, anoNascimento = 1901, bio = Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular.
+nome = Laudelina de Campos Melo, localNascimento = Poços de Caldas, profissao = Empregada Doméstica, anoNascimento = 1904, bio = Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil.
+nome = Enedina Alves Marques, localNascimento = Curitiba, profissao = Engenheira, anoNascimento = 1945, bio = Primeira mulher negra a se formar em engenharia no Brasil.
+*/
+
+db.mulheresmaravilhosas.insertMany([{"nome":"Maria Firmina dos Reis", 
+"localNascimento":"São Luís", 
+"profissao":"Escritora", 
+"anoNascimento":1822, 
+"bio":"Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura."},
+{"nome":"Antonieta de Barros", 
+"localNascimento":"Florianópolis", 
+"profissao":"Professora", 
+"anoNascimento":1901, 
+"bio":"Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."},
+{"nome":"Laudelina de Campos Melo", 
+"localNascimento":"Poços de Caldas", 
+"profissao":"Empregada Doméstica", 
+"anoNascimento":1904, 
+"bio":"Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."},
+{"nome":"Enedina Alves Marques", 
+"localNascimento":"Curitiba", 
+"profissao":"Engenheira", 
+"anoNascimento":1945, 
+"bio":"Primeira mulher negra a se formar em engenharia no Brasil."}])
+
+// 1.Selecione todos os registros.
+db.mulheresmaravilhosas.find()
+// 2.Selecione todos os registros e deixe a com apresentação melhor visível.
+db.mulheresmaravilhosas.find().pretty()
+// 3.Selecione todos os registros em que o nome seja igual a ‘Antonieta de Barros’.
+db.mulheresmaravilhosas.find({"nome":"Antonieta de Barros"}).pretty()
+// 4.Selecione todos os registros em que o local de nascimento seja Curitiba.
+db.mulheresmaravilhosas.find({"localNascimento":"Curitiba"}).pretty()
+// 5.Selecione todos os registros em que contenha a profissão igual a 'Escritora'.
+db.mulheresmaravilhosas.find({"profissao":"Escritora"}).pretty()
+// 6.Selecione todos os registros onde o nome seja igual a 'Maria Firmina dos Reis' e a profissão seja  'Escritora'.
+db.mulheresmaravilhosas.find({$and:[{"nome":{$eq:"Maria Firmina dos Reis"}}, {"profissao":{$eq:"Escritora"}}]}).pretty()
+// 7.Selecione todos os registros em que o local de nascimento não seja Sacramento e a profissão seja professora.
+db.mulheresmaravilhosas.find({$and:[{"localNascimento":{$not:{$eq:"Sacramento"}}}, {"profissao":{$eq:"Professora"}}]}).pretty()
+// 8.Selecione todos os registros em que contenham o local de nascimento seja São Luís ou Poços de Caldas.
+db.mulheresmaravilhosas.find({$or:[{"localNascimento":{$eq:"São Luís"}}, {"localNascimento":{$eq:"Poços de Caldas"}}]}).pretty()
+// (Primeiro: realize o exercício com o operador ou e posteriormente realize o exercício com o operador in.)
+db.mulheresmaravilhosas.find({$or:[{"localNascimento":{$in:["São Luís","Poços de Caldas"]}}]}).pretty()
+// 9.Pegue o exercício acima e inclua também aonde a data de nascimento seja 1904. Utilizando os dois operadores juntos. $or e $in.
+db.mulheresmaravilhosas.find({$and:[{"anoNascimento":1904},{$or:[{"localNascimento":{$in:["São Luís","Poços de Caldas"]}}]}]}).pretty()
+// 10.Procure todas os registros em que o local de nascimento seja Florianópolis ou a profissão seja empregada doméstica ou engenheira.
+db.mulheresmaravilhosas.find({$or:[{"localNascimento":{$eq:"Florianópolis"}}, {"profissao":{$in:["Empregada Doméstica","Engenheira"]}}]}).pretty()
+
+
+// Exercícios - Like
+// 1.Selecione todos os registros em que os nomes contenham em qualquer parte da palavra a letra 'p'.
+db.mulheresmaravilhosas.find({"nome":/p/}).pretty()
+// 2.Selecione todos os registros em que os nomes terminem com a letra 's'.
+db.mulheresmaravilhosas.find({"nome":/s$/}).pretty()
+// 3.Selecione todos os registros em que os nomes terminem com a letra 'o'.
+db.mulheresmaravilhosas.find({"nome":/o$/}).pretty()
+//4.Selecione todos os registros em que os nomes terminem com a letra 'w' ou 's'.
+db.mulheresmaravilhosas.find({$or:[{"nome":{$in:[/w$/,/s$/]}}]}).pretty()
+//5.Selecione todos os registros em que os nomes comecem com a letra 'A'.
+db.mulheresmaravilhosas.find({"nome":/^A/}).pretty()
+//6.Selecione todos os registros em que os nomes comecem com a letra 'L' ou 'E'.
+db.mulheresmaravilhosas.find({$or:[{"nome":{$in:[/^L/,/^E/]}}]}).pretty()
+
+//Exercícios $gt e $lt
+//Traga somente alunas em que o ano de nascimento seja superior a 1900 e inferior a 1930.
+db.mulheresmaravilhosas.find({$and:[{"anoNascimento":{$gt:1900}},{"anoNascimento":{$lt:1930}}]}).pretty()
+
+//Exercícios update
+//1.Atualize os registros criados no exercício anterior, com os filtros abaixo (não se esqueça de buscar pelo _id):
+//nome = A Inspiradora Carolina Maria de Jesus, bio =  Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país (sem defeitos).
+db.mulheresmaravilhosas.find({"nome":"Carolina Maria de Jesus"}).pretty()
+{
+    "_id" : ObjectId("5f945bb524f723873c939366"),
+    "nome" : "Carolina Maria de Jesus",
+    "localNascimento" : "Sacramento",
+    "profissao" : "Escritora",
+    "anoNascimento" : 1914,
+    "bio" : "Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país."
+}
+db.mulheresmaravilhosas.update({"_id":ObjectId("5f945bb524f723873c939366")}, {$set:{"nome":"A Inspiradora Carolina Maria de Jesus", "bio":"Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país (sem defeitos)."}})
+db.mulheresmaravilhosas.find({"_id":ObjectId("5f945bb524f723873c939366")}).pretty()
+{
+    "_id" : ObjectId("5f945bb524f723873c939366"),
+    "nome" : "A Inspiradora Carolina Maria de Jesus",
+    "localNascimento" : "Sacramento",
+    "profissao" : "Escritora",
+    "anoNascimento" : 1914,
+    "bio" : "Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país (sem defeitos)."
+}
+
+//nome = A Fantástica Maria Firmina dos Reis, bio = Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura, um mulherão desse gente!
+db.mulheresmaravilhosas.find({"nome":"Maria Firmina dos Reis"}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c939367"),
+    "nome" : "Maria Firmina dos Reis",
+    "localNascimento" : "São Luís",
+    "profissao" : "Escritora",
+    "anoNascimento" : 1822,
+    "bio" : "Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura."
+}
+db.mulheresmaravilhosas.update({"_id":ObjectId("5f945d3224f723873c939367")}, {$set:{"nome":"A Fantástica Maria Firmina dos Reis", "bio":"Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura, um mulherão desse gente!"}})
+db.mulheresmaravilhosas.find({"_id":ObjectId("5f945d3224f723873c939367")}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c939367"),
+    "nome" : "A Fantástica Maria Firmina dos Reis",
+    "localNascimento" : "São Luís",
+    "profissao" : "Escritora",
+    "anoNascimento" : 1822,
+    "bio" : "Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura, um mulherão desse gente!"
+}
+
+//nome = Antonieta de Barros Maravilhosa, profissao = Professora e Jornalista e Politica, o que essa mulher não fez?
+db.mulheresmaravilhosas.find({"nome":"Antonieta de Barros"}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c939368"),
+    "nome" : "Antonieta de Barros",
+    "localNascimento" : "Florianópolis",
+    "profissao" : "Professora",
+    "anoNascimento" : 1901,
+    "bio" : "Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."
+}
+db.mulheresmaravilhosas.update({"_id":ObjectId("5f945d3224f723873c939368")}, {$set:{"nome":"Antonieta de Barros Maravilhosa", "profissao":"Professora e Jornalista e Politica, o que essa mulher não fez?"}})
+db.mulheresmaravilhosas.find({"_id":ObjectId("5f945d3224f723873c939368")}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c939368"),
+    "nome" : "Antonieta de Barros Maravilhosa",
+    "localNascimento" : "Florianópolis",
+    "profissao" : "Professora e Jornalista e Politica, o que essa mulher não fez?",
+    "anoNascimento" : 1901,
+    "bio" : "Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."
+}
+//nome = Laudelina de Campos Melo Nunca Errou, profissao = Fada sensata
+db.mulheresmaravilhosas.find({"nome":"Laudelina de Campos Melo"}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c939369"),
+    "nome" : "Laudelina de Campos Melo",
+    "localNascimento" : "Poços de Caldas",
+    "profissao" : "Empregada Doméstica",
+    "anoNascimento" : 1904,
+    "bio" : "Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."
+}
+db.mulheresmaravilhosas.update({"_id":ObjectId("5f945d3224f723873c939369")}, {$set:{"nome":"Laudelina de Campos Melo Nunca Errou", "profissao":"Fada sensata"}})
+db.mulheresmaravilhosas.find({"_id":ObjectId("5f945d3224f723873c939369")}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c939369"),
+    "nome" : "Laudelina de Campos Melo Nunca Errou",
+    "localNascimento" : "Poços de Caldas",
+    "profissao" : "Fada sensata",
+    "anoNascimento" : 1904,
+    "bio" : "Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."
+}
+
+//nome = Enedina Alves Marques Dona do Mundo, bio = Primeira mulher negra a se formar em engenharia no Brasil, MEU QUE MULHER FODA.
+db.mulheresmaravilhosas.find({"nome":"Enedina Alves Marques"}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c93936a"),
+    "nome" : "Enedina Alves Marques",
+    "localNascimento" : "Curitiba",
+    "profissao" : "Engenheira",
+    "anoNascimento" : 1945,
+    "bio" : "Primeira mulher negra a se formar em engenharia no Brasil."
+}
+db.mulheresmaravilhosas.update({"_id":ObjectId("5f945d3224f723873c93936a")}, {$set:{"nome":"Enedina Alves Marques Dona do Mundo", "bio":"Primeira mulher negra a se formar em engenharia no Brasil, MEU QUE MULHER FODA."}})
+db.mulheresmaravilhosas.find({"_id":ObjectId("5f945d3224f723873c93936a")}).pretty()
+{
+    "_id" : ObjectId("5f945d3224f723873c93936a"),
+    "nome" : "Enedina Alves Marques Dona do Mundo",
+    "localNascimento" : "Curitiba",
+    "profissao" : "Engenheira",
+    "anoNascimento" : 1945,
+    "bio" : "Primeira mulher negra a se formar em engenharia no Brasil, MEU QUE MULHER FODA."
+}
+
+//Exercícios Delete
+//Exclua os últimos 5 itens criados e atualizados nos itens anteriores com as seguintes condições:
+//1.Faça o filtro pelo _id nos itens: Carolina Maria de Jesus e Maria Firmina dos Reis
+db.mulheresmaravilhosas.remove({"_id":ObjectId("5f945bb524f723873c939366")})
+db.mulheresmaravilhosas.remove({"_id":ObjectId("5f945d3224f723873c939367")})
+
+//2. Faça o filtro pelo localNascimento no item: Antonieta de Barros
+db.mulheresmaravilhosas.remove({"localNascimento":"Florianópolis"})
+
+//3. Faça o filtro pela profissão, nos itens: Laudelina de Campos Melo e Enedina Alves Marques
+db.mulheresmaravilhosas.remove({"profissao":"Fada sensata"})
+db.mulheresmaravilhosas.remove({"profissao":"Engenheira"})
