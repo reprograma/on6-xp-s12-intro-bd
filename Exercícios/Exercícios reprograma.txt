@@ -3,32 +3,87 @@
 1.	Insira 1 novo registro conforme descrição abaixo:
 nome = Carolina Maria de Jesus, localNascimento = Sacramento, profissao = Escritora, anoNascimento = 1914, bio =  Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país.
 
+db.mulheresincriveis.insert([{
+    "nome":"Shaiene Barbosa", 
+    "localNascimento":"Rio de Janeiro",
+    "profisao":"Consultora de Growth Marketing",
+    "anoNascimento":1986,
+    "bio":"Apaixonada por tecnologias que facilitam meu dia-a-dia")]}
+
+
 2.	Insira 4 novos registros de uma só vez conforme descrições abaixo:
 nome = Maria Firmina dos Reis, localNascimento = São Luís, profissao = Escritora, anoNascimento = 1822, bio = Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura.
 nome = Antonieta de Barros,  localNascimento = Florianópolis, profissao = Professora, anoNascimento = 1901, bio = Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular.
 nome = Laudelina de Campos Melo, localNascimento = Poços de Caldas, profissao = Empregada Doméstica, anoNascimento = 1904, bio = Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil.
 nome = Enedina Alves Marques, localNascimento = Curitiba, profissao = Engenheira, anoNascimento = 1945, bio = Primeira mulher negra a se formar em engenharia no Brasil.
 
+db.mulheresincriveis.insertMany([{
+    "nome":"Maria Firmina Reis", 
+    "localNascimento":"São Luíz",
+    "profisao":"Escritora",
+    "anoNascimento":1822,
+    "bio":"Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura."},
+    
+    {"nome":"Antonieta de Barros", 
+        "localNascimento":"Florianópolis",
+        "profisao":"Professora",
+        "anoNascimento":1901,
+        "bio":"Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."},
+        
+    {"nome":"Laudelina de Barros", 
+        "localNascimento":"Poços de Caldas",
+        "profisao":"Empregada Doméstica",
+        "anoNascimento":1904,
+        "bio":"Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."},
+    
+    {
+        "nome":"Enedina Alves Marques", 
+        "localNascimento":"Curitiba",
+        "profisao":"Engenheira",
+        "anoNascimento":1945,
+        "bio":"Primeira mulher negra a se formar em engenharia no Brasil."
+    }])
+
+
 
 1.Selecione todos os registros.
 
+db.mulheresincriveis.find()
+
 2.Selecione todos os registros e deixe a com apresentação melhor visível.
+
+db.mulheresincriveis.find().pretty()
 
 3.Selecione todos os registros em que o nome seja igual a ‘Antonieta de Barros’.
 
+db.mulheresincriveis.find({"nome":"Antonieta de Barros"}).pretty()
+
 4.Selecione todos os registros em que o local de nascimento seja Curitiba.
+
+db.mulheresincriveis.find({"localNascimento":"Curitiba"}).pretty()
 
 5.Selecione todos os registros em que contenha a profissão igual a “Escritora”.
 
+db.mulheresincriveis.find({"profisao":"Professora"}).pretty()
+
 6.Selecione todos os registros onde o nome seja igual a 'Carolina Maria de Jesus' e a profissão seja  'Escritora'.
 
+ db.mulheresincriveis.find({"nome":"Shaiene Barbosa","profisao":"Consultora de Growth Marketing"}).pretty()
+
 7.Selecione todos os registros em que o local de nascimento não seja Sacramento e a profissão seja professora.
+
+
 
 8.Selecione todos os registros em que contenham o local de nascimento seja São Luís ou a profissão seja engenheira.
  (Primeiro: realize o exercício com o operador ou e posteriormente realize o exercício com o operador in.)
 
+db.mulheresincriveis.find({$or:[{"localNascimento":"São Luíz"},{"locaNascimento":"Poços de Caldas"},]}).pretty()
+
 9.Pegue o exercício acima e inclua também aonde a data de nascimento seja 1904.
 Utilizando os dois operadores juntos. $or e $in.
+
+db.mulheresincriveis.find({"localNascimento":$in:["São Luíz","profisao":"Engenheira"},{ $in : ["anoNascimento":1904] }]}).pretty()
+
 
 10.Procure todas os registros em que tenham o local de nascimento seja Florianópolis ou a profissão seja empregada doméstica ou engenheira.
 
