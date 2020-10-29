@@ -88,6 +88,8 @@ db.herois.updateOne({"nome": "Mulher Maravilha"}, {$set: {"usaCapa": true}})
 >>>>>>> main
 15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON.
 
-Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json
+
+mongoexport --collection=herois --db=superHerois --out=C:\Users\HP_USER\Documents\desenvolvimento\{reprograma}\on6-xp-s12-intro-bd\desafio/herois.json
+
 
 
