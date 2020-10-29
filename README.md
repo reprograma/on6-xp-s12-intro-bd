@@ -21,7 +21,11 @@ E execute o comando:
 
 `mongoimport --db nomeDoDatabase --collection nomeDaCollection --jsonArray --file nomeDoArquivo.json`
 
+`mongoimport --db heroisDoDatabase --collection herois --jsonArray --file herois.json`
+
 Realizar os exercícios propostos que se encontra em [Exercicio-para-casa](https://github.com/reprograma/on6-xp-s12-intro-bd/tree/main/Exercicio-para-casa), e enviar o arquivo .txt com os comandos utilizados para a resolução do exercício, junto ao arquivo .json da base exportada no último exercício.
+
+
 
 
 ----
