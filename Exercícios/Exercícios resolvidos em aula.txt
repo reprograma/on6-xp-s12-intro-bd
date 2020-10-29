@@ -1,5 +1,9 @@
 ﻿Exercícios
 
+db.createCollection("db.mulheresincriveis")
+mongoimport --db reprograma --collection mulheresincriveis --jsonArray --file mulheresincriveis.json
+db.mulheresincriveis.find({}, {nome:1, _id:0})
+
 1.	Insira 1 novo registro conforme descrição abaixo:
 inser
 

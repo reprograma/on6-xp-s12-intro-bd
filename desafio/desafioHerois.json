@@ -1,0 +1,176 @@
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80077"
+    },
+    "nome": "Shrek",
+    "dateOfBirth": "1785-04-06T08:30:00.000Z",
+    "local": "Londres",
+    "usaCapa": false,
+    "quantidadeGatos": 5,
+    "quantidadeCachorros": 2
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80078"
+    },
+    "nome": "Homem Formiga",
+    "dateOfBirth": "1962-01-27T08:30:00.000Z",
+    "local": "Londres",
+    "usaCapa": false,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 5
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae8007a"
+    },
+    "nome": "Batman",
+    "dateOfBirth": "1939-10-01T08:30:00.000Z",
+    "local": "Detroit",
+    "usaCapa": true,
+    "quantidadeGatos": 2,
+    "quantidadeCachorros": 7
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae8007b"
+    },
+    "nome": "Homem de Ferro",
+    "dateOfBirth": "1970-05-29T08:30:00.000Z",
+    "local": "Nova York",
+    "usaCapa": false,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 1
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae8007c"
+    },
+    "nome": "Mulher Maravilha",
+    "dateOfBirth": "1941-12-08T08:30:00.000Z",
+    "local": "Themyscira",
+    "usaCapa": "true",
+    "quantidadeGatos": 2,
+    "quantidadeCachorros": 7
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae8007d"
+    },
+    "nome": "Pantera Negra",
+    "dateOfBirth": "1973-11-25T08:30:00.000Z",
+    "local": "Wakanda",
+    "usaCapa": false,
+    "quantidadeGatos": 7,
+    "quantidadeCachorros": 3
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae8007e"
+    },
+    "nome": "Gavião Arqueiro",
+    "dateOfBirth": "1981-03-18T08:30:00.000Z",
+    "local": "Roma",
+    "usaCapa": false,
+    "quantidadeGatos": 1,
+    "quantidadeCachorros": 0
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae8007f"
+    },
+    "nome": "Hulk",
+    "dateOfBirth": "1969-12-18T08:30:00.000Z",
+    "local": "Novo México",
+    "usaCapa": false,
+    "quantidadeGatos": 1,
+    "quantidadeCachorros": 1
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80080"
+    },
+    "nome": "Wolverine",
+    "dateOfBirth": "1880-02-17T08:30:00.000Z",
+    "local": "Canadá",
+    "usaCapa": false,
+    "quantidadeGatos": 3,
+    "quantidadeCachorros": 0
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80081"
+    },
+    "nome": "Homem Aranha",
+    "dateOfBirth": "2001-08-10T08:30:00.000Z",
+    "local": "San Francisco",
+    "usaCapa": false,
+    "quantidadeGatos": 0,
+    "quantidadeCachorros": 2
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80082"
+    },
+    "nome": "Visão",
+    "dateOfBirth": "1940-11-17T08:30:00.000Z",
+    "local": "Nova York",
+    "usaCapa": true,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 1
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80083"
+    },
+    "nome": "Thor",
+    "dateOfBirth": "1940-05-14T08:30:00.000Z",
+    "local": "Noruega",
+    "usaCapa": true,
+    "quantidadeGatos": 7.0,
+    "quantidadeCachorros": 3
+}
+{
+    "_id": {
+        "$oid": "5f98b239e97acefc7ae80084"
+    },
+    "nome": "Deadpool",
+    "dateOfBirth": "1991-04-25T08:30:00.000Z",
+    "local": "Canadá",
+    "usaCapa": false,
+    "quantidadeGatos": 5,
+    "quantidadeCachorros": 3
+}
+{
+    "_id": {
+        "$oid": "5f98d78fe13f399fe11e6825"
+    },
+    "nome": "Viuva Negra",
+    "dateOfBirth": "1928-08-08T08:28:00.000Z",
+    "local": "Volgogrado",
+    "usaCapa": "false",
+    "quantidadeGatos": 1.0,
+    "quantidadeCachorros": 0.0
+}
+{
+    "_id": {
+        "$oid": "5f98d78fe13f399fe11e6826"
+    },
+    "nome": "Tempestade",
+    "dateOfBirth": "1975-01-05T08:28:00.000Z",
+    "local": "Quênia",
+    "usaCapa": "true",
+    "quantidadeGatos": 0.0,
+    "quantidadeCachorros": 1.0
+}
+{
+    "_id": {
+        "$oid": "5f98d78fe13f399fe11e6827"
+    },
+    "nome": "Mulher invisível",
+    "dateOfBirth": "1978-01-03T08:30:00.000Z",
+    "local": "Nova York",
+    "usaCapa": "false",
+    "quantidadeGatos": 1.0,
+    "quantidadeCachorros": 1.0
+}

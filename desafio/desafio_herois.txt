@@ -1,36 +1,87 @@
 ﻿Desafio
-Você receberá um arquivo com o formato JSON contendo alguns personagens de quadrinhos e/ou desenhos animados e você deverá realizar as alterações que foram solicitadas abaixo pelo cliente.
+db.createCollection("desafioHerois")
+//db.desafioHerois.find({}, {nome:1, _id:0}) - traz todos os nomes e somente nomes.
+
+mongoimport --db reprograma --collection desafioHerois --jsonArray --file herois.json
+
+
+Você receberá um arquivo com o formato JSON contendo alguns personagens de quadrinhos e/ou desenhos 
+animados e você deverá realizar as alterações que foram solicitadas abaixo pelo cliente.
 
 1.	Selecione todos os registros.
+db.desafioHerois.find().pretty()
 
 2.	Selecione apenas o primeiro registro.
+db.desafioHerois.find().limit(1).pretty()
 
 3.	Selecione todos os registros em que o nome seja igual a ‘Sabrina’ ou a quantidade de gatos seja igual a 2.
+db.desafioHerois.find({ $or:  [{ "nome": "Sabrina"} , { "quantidadeGatos": 2 }] }).pretty()
 
-4.	Selecione todos os registros em que o local de nascimento seja igual a Nova York e necessariamente que a quantidade de cachorros seja igual a 1.
+4.	Selecione todos os registros em que o local de nascimento seja igual a Nova York e necessariamente 
+que a quantidade de cachorros seja igual a 1.
+db.desafioHerois.find({"local": "Nova York" , "quantidadeCachorros" : 1 }).pretty()
 
-5.	Selecione todos os registros em que a quantidade de gatos seja igual a 4 ou a quantidade de cachorros seja igual a 2.
+5.	Selecione todos os registros em que a quantidade de gatos seja igual a 4 ou a 
+quantidade de cachorros seja igual a 2.
+db.desafioHerois.find({ $or:  [{ "quantidadeGatos": 4 }, { "quantidadeCachorros": 2 }] }).pretty()
 
 6.	Selecione todos os registros em que o nome comece com C.
+db. desafioHerois.find({ "nome" : /^C/i }).pretty()
 
 7.	Selecione todos os registros em que o nome comece com H.
+db. desafioHerois.find({ "nome" : /^H/i }).pretty()
 
 8.	Selecione todos os registros em que o nome termine com a.
+db. desafioHerois.find({ "nome" : /a$/ }).pretty()
 
 9.	Selecione todos os registros em que o nome contenha s.
+db. desafioHerois.find({ "nome" : /s/i }).pretty()
 
 10.	Selecione todos os registros em que o nome contenha ‘e’ ou ‘o’.
+db.desafioHerois.find({ $or:  [{ "nome": /e/i }, { "nome": /o/i }] }).pretty()
+db.desafioHerois.find({}, {nome:1, _id:0})
+
 
 11.	Insira 3 novos super-heróis.
-
+db.desafioHerois.insertMany([{
+"nome": "Viuva Negra", "dateOfBirth": "1928-08-08T08:28:00.000Z", "local": "Volgogrado","usaCapa": "false", 
+"quantidadeGatos": 1, "quantidadeCachorros": 0}, 
+{"nome": "Tempestade", "dateOfBirth": "1975-01-05T08:28:00.000Z", "local": "Quênia", "usaCapa": "true", 
+"quantidadeGatos": 0, "quantidadeCachorros": 1},
+{"nome": "Mulher invisível", "dateOfBirth": "1978-01-03T08:30:00.000Z", "local": "Nova York","usaCapa": "false", 
+"quantidadeGatos": 1, "quantidadeCachorros": 1}])
+               
+   
 12.	Delete 1 super-herói em que o nome seja igual a Capitão América.
+db.desafioHerois.remove({ "nome" : "Capitão América"})
 
-13.	Atualize a quantidade de gatos em que o usuário com o registro de nome ‘Thor’ possui. Atualize a quantidade de gatos de ‘5’ para ‘7’.
+13.	Atualize a quantidade de gatos em que o usuário com o registro de nome ‘Thor’ possui. Atualize
+ a quantidade de gatos de ‘5’ para ‘7’.
+ db.desafioHerois.find({ "nome" : "Thor" }).pretty()
+
+db.desafioHerois.update(
+	{ "nome" :  "Thor" },   
+	{
+	   $set : { "quantidadeGatos": 7 }
+	}
+)
+
 
 14. 	Atualize o registro da Mulher Maravilha para capa = true;
+db.desafioHerois.find({ "nome" : "Mulher Maravilha" }).pretty()
+
+db.desafioHerois.update(
+	{ "nome" :  "Mulher Maravilha" },   
+	{
+	   $set : { "usaCapa": "true"}
+	}
+)
+
 
 15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON.
-
 Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json
+
+mongoexport --collection=desafioHerois --db=reprograma --out="C:\Reprograma\Aula 12\on6-xp-s12-intro-bd\desafio\desafioHerois.json"
+
 
 
