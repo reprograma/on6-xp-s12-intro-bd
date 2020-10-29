@@ -1,0 +1,75 @@
+entrar na pasta bin em documentos
+
+C:\Program Files\MongoDB\Server\4.4\bin
+cmd/ 
+
+entrar no cmd 
+>>> mongo (para iniciar o mongo)
+Use Reprograma - Criar o BD Reprograma
+
+db.createCollection('alunas') - criar uma collection
+
+show dbs - mostrar todos os bds
+
+db.alunas.insert({'nome':'fulano', 'idade':00}) - inserir um campo
+
+db.alunas.insertMany([{'nome':'fulano', 'idade':00}, {'nome':'fulano', 'idade':00}, {'nome':'fulano', 'idade':00}]) - inserir mais de um campo
+
+db.alunas.find() - Procurar arquivos
+
+db.alunas.find().pretty() - exibe os arquivos organizado
+
+db.alunas.count() - quantos itens tem na coleção
+
+db.alunas.find().limit(2) - mostra os dois primeiros itens da coleção
+
+db.alunas.find().limit(2).pretty() - mostra os dois primeiros itens da coleção organizado
+
+db.mulheresIncriveis.find({'profissao':'Escritora'}) - Procurar por atributo
+
+db.mulheresincriveis.find({ "nome" : { $in : ["Nome A", "Nome B"] } }).pretty() -  Procurar por dois atributos
+
+db.mulheresincriveis.find({ $or: [{ "nome" : "Nome A"}, {"nome" : "Nome B" }] }).pretty() - Procurar por um ou outro atributo
+
+MAIOR QUE
+db. mulheresincriveis.find({ "anoNascimento" : { $gt : 2018 } }).pretty()
+
+MAIOR IGUAL QUE
+db. mulheresincriveis.find({ "anoNascimento" : { $gte : 2018 } }).pretty()
+
+MENOR QUE
+db. mulheresincriveis.find({ "anoNascimento" : { $lt : 2019 } }).pretty()
+
+MENOR IGUAL QUE
+db. mulheresincriveis.find({ "anoNascimento" : { $lte : 2019 } }).pretty()
+
+
+ordena pelo campo _id de forma crescente
+
+db. mulheresincriveis.find().sort({ _id: 1}).pretty() 
+
+ordena pelo campo _id de forma decrescente
+db. mulheresincriveis.find().sort({ _id: -1}).pretty() 
+
+ordena pelo campo _id de forma decrescente até os 3 primeiros numeros
+db. mulheresincriveis.find().sort({ _id: -1}).limit(3)pretty() 
+
+db.mulheresincriveis.find({ "nome" : /a/ }).pretty() – um nome que contenha a em qualquer parte.
+
+db. mulheresincriveis.find({ "nome" : /a/i }).pretty() – um nome que contenha a ou A em qualquer parte.
+
+db. mulheresincriveis.find({ "nome" : /$/ }).pretty() – um nome que termine com a.
+
+db. mulheresincriveis.find({ "nome" : /^a/ }).pretty() – um nome que comece com a.
+
+
+
+importanto data
+
+mongoimport --db dbName --collection collectionName <fileName.json
+
+
+mongoimport --db nomeDoDatabase --collection nomeDaCollection --jsonArray --file nomeDoArquivo.json
+
+
+mongoimport --db reprograma --collection herois --jsonArray --file herois.json

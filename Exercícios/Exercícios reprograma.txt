@@ -3,12 +3,11 @@
 1.	Insira 1 novo registro conforme descrição abaixo:
 nome = Carolina Maria de Jesus, localNascimento = Sacramento, profissao = Escritora, anoNascimento = 1914, bio =  Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país.
 
-2.	Insira 4 novos registros de uma só vez conforme descrições abaixo:
-nome = Maria Firmina dos Reis, localNascimento = São Luís, profissao = Escritora, anoNascimento = 1822, bio = Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura.
-nome = Antonieta de Barros,  localNascimento = Florianópolis, profissao = Professora, anoNascimento = 1901, bio = Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular.
-nome = Laudelina de Campos Melo, localNascimento = Poços de Caldas, profissao = Empregada Doméstica, anoNascimento = 1904, bio = Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil.
-nome = Enedina Alves Marques, localNascimento = Curitiba, profissao = Engenheira, anoNascimento = 1945, bio = Primeira mulher negra a se formar em engenharia no Brasil.
+{"nome" : "Carolina Maria de Jesus", "localNascimento" :"Sacramento" , "profissao" : "Escritora" , "anoNascimento" : 1914, "bio" : "Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país."}
 
+2.	Insira 4 novos registros de uma só vez conforme descrições abaixo:
+
+([{'nome':'Maria Firmina dos Reis', 'localNascimento':'São Luís', 'profissao':'Escritora', 'anoNascimento':1822, 'bio':'Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura.'},{'nome':'Antonieta de Barros', 'localNascimento':'Florianópolis', 'profissao':'Professora', 'anoNascimento':1901, 'bio':'Professora jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular.'} ,{'nome':'Laudelina de Campos Melo', 'localNascimento':'Poços de Caldas', 'profissao':'Empregada Doméstica', 'anoNascimento':1904, 'bio':'Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil.'}, {'nome':'Enedina Alves Marques', 'localNascimento':'Curitiba', 'profissao':'Engenheira', 'anoNascimento':1945, 'bio':'Primeira mulher negra a se formar em engenharia no Brasil.'}])
 
 1.Selecione todos os registros.
 
@@ -27,10 +26,16 @@ nome = Enedina Alves Marques, localNascimento = Curitiba, profissao = Engenheira
 8.Selecione todos os registros em que contenham o local de nascimento seja São Luís ou a profissão seja engenheira.
  (Primeiro: realize o exercício com o operador ou e posteriormente realize o exercício com o operador in.)
 
+
+
 9.Pegue o exercício acima e inclua também aonde a data de nascimento seja 1904.
 Utilizando os dois operadores juntos. $or e $in.
 
+db.mulheresIncriveis.find({$or: [{"localNascimento":"Poços de Caldas", "anoNascimento": 1904}, {"localNascimento":"São Luís", "anoNascimento": 1904}]}).pretty()
+Profa, assim pegou
+
 10.Procure todas os registros em que tenham o local de nascimento seja Florianópolis ou a profissão seja empregada doméstica ou engenheira.
+db.mulheresincriveis.find({$or: [{"profissao":{$in:["Empregada", "Engenheira"]}},{"localNascimento": "Florianópolis"}]})
 
 
 Exercícios - Like
