@@ -1,0 +1,33 @@
+
+use('reprograma');
+
+// 1
+db.mulheresincriveis.find();
+
+// 2
+db.mulheresincriveis.find().pretty();
+
+// 3
+db.mulheresincriveis.find({"nome": "Antonieta de Barros"}).pretty();
+
+// 4
+db.mulheresincriveis.find({"localNascimento": "Curitiba"}).pretty();
+
+// 5
+db.mulheresincriveis.find({"nome": "Carolina Maria de Jesus"}, {"profissao": "Escritora"}).pretty();
+
+// 6
+db.mulheresincriveis.find({"nome": "Carolina Maria de Jesus"}, {"profissao": "Escritora"}).pretty();
+
+// 8
+db.mulheresincriveis.find({$or: [{"localNascimento": "São Luís"}, {"localNascimento": "Poços de Caldas"}]});
+
+db.mulheresincriveis.find({"localNascimento":{$in:["São Luís", "Poços de Caldas"]}});
+
+// 9
+db.mulheresincriveis.find({$or: [{"localNascimento":{$in:["São Luís", "Poços de Caldas"]}}, {"anoNascimento": "1904"}]});
+
+db.mulheresIncriveis.find({$or: [{"localNascimento":"Poços de Caldas", "anoNascimento": 1904}, {"localNascimento":"São Luís", "anoNascimento": 1904}]}).pretty() 
+
+// 10
+db.mulheresincriveis.find({$or: [{"profissao":{$in:["Empregada", "Engenheira"]}},{"localNascimento": "Florianópolis"}]})
