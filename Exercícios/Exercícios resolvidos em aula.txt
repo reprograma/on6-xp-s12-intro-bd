@@ -1,7 +1,7 @@
 ﻿Exercícios
 
 1.	Insira 1 novo registro conforme descrição abaixo:
-inser
+insert
 
 nome = Carolina Maria de Jesus, localNascimento = Sacramento, profissao = Escritora, anoNascimento = 1914, bio =  Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país.
 
