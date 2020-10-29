@@ -1,0 +1,55 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('reprograma');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against proper database and collection.
+db.mulheresincriveis.drop();
+
+// Insert a few documents into the sales collection.
+db.mulheresincriveis.insertMany([
+{
+    "nome" : "Renata Abreu",
+    "localNascimento" : "Resende",
+    "profissao" : "Analista Java",
+    "anoNascimento" : "1989",
+    "bio" : "Sou Renata mulher maravilhosa, que adora fazer trabalhos manuais e que arrasa no codigo e tem uma voz linda."
+},
+{
+    "nome": "Maria Firmina dos Reis",
+    "localNascimento": "São Luís",
+    "profissao": "Escritora",
+    "anoNascimento": "1822",
+    "bio": "Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura."
+
+},
+{
+    "nome": "Antonieta de Barros",
+    "localNascimento": "Florianópolis",
+    "profissao": "Professora",
+    "anoNascimento": "1901",
+    "bio": "Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."
+},
+{
+    "nome": "Laudelina de Campos Melo",
+    "localNascimento": "Poços de Caldas",
+    "profissao": "Empregada",
+    "anoNascimento": "1904",
+    "bio": "Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."
+},
+{
+    "nome": "Enedina Alves Marques",
+    "localNascimento": "Curitiba",
+    "profissao": "Engenheira",
+    "anoNascimento": "1945",
+    "bio": "Primeira mulher negra a se formar em engenharia no Brasil."
+}
+]);
+
+db.mulheresincriveis.find({ $or: [{"profissao": "Engenheira"}, {"localNascimento":"Resende"}] } ).pretty();
+
+db.mulheresincriveis.find( {"profissao": {$in:["Escritora", "Engenheira"]}}).pretty();
