@@ -4,52 +4,68 @@ Desafio:
 Você receberá um arquivo com o formato JSON contendo alguns personagens de quadrinhos e/ou desenhos animados e você deverá realizar as alterações que foram solicitadas abaixo pelo cliente.
 
 1.	Selecione todos os registros:
+
     db.herois.find().pretty()
 
 2.	Selecione apenas o primeiro registro:
+
     db.herois.find().limit(1).pretty()
     db.herois.findOne()
     
 3.	Selecione todos os registros em que o nome seja igual a ‘Sabrina’ ou a quantidade de gatos seja igual a 2:
+
     db.herois.find({$or:[{ "nome": "Sabrina"} , { "quantidadeGatos":2}]}).pretty()
 
-4.	Selecione todos os registros em que o local de nascimento seja igual a Nova York e necessariamente que a quantidade de cachorros seja igual a 1.
+4.	Selecione todos os registros em que o local de nascimento seja igual a Nova York e necessariamente que a quantidade de cachorros seja igual a 1:
+
     db.herois.find({"local" : "Nova York}, {"quantidadeCachorros":1}).pretty()
     db.herois.find({"local": { $in : ["Nova York", 1]}}).pretty()
 
-5.	Selecione todos os registros em que a quantidade de gatos seja igual a 4 ou a quantidade de cachorros seja igual a 2.
+5.	Selecione todos os registros em que a quantidade de gatos seja igual a 4 ou a quantidade de cachorros seja igual a 2:
+
     db.herois.find({$or:[{ "quantidadeGatos": 4} , { "quantidadeCachorros":2}]}).pretty()
 
-6.	Selecione todos os registros em que o nome comece com C.
+6.	Selecione todos os registros em que o nome comece com C:
+
     db.herois.find({"nome:" /^c/i}).pretty()
 
-7.	Selecione todos os registros em que o nome comece com H.
+7.	Selecione todos os registros em que o nome comece com H:
+
     db.herois.find({"nome:" /^h/i}).pretty()    
 
-8.	Selecione todos os registros em que o nome termine com a.
+8.	Selecione todos os registros em que o nome termine com a:
+
     db.herois.find({"nome:" /a/}).pretty()
 
-9.	Selecione todos os registros em que o nome contenha s.
+9.	Selecione todos os registros em que o nome contenha s:
+
     db.herois.find({"nome":/s/i}).pretty()
 
-10.	Selecione todos os registros em que o nome contenha ‘e’ ou ‘o’.
+10.	Selecione todos os registros em que o nome contenha ‘e’ ou ‘o’:
+
     db.herois.find({"nome:"{$in: [ /e/, /o/] }}).pretty()
 
-11.	Insira 3 novos super-heróis.
+11.	Insira 3 novos super-heróis:
+
 db.herois.insertMany([{"nome": "Tempestade","dateOfBirth":"1927-05-29T08:30:00.000Z", "local":"Manhattan", "usaCapa":true, "quantidadeGatos":1, "quantidadeCachorros":1},
 {"nome": "Wolverine", "dateOfBirth":"1907-05-29T08:30:00.000Z", "local":"Canadá", "usaCapa":false, "quantidadeGatos":0, "quantidadeCachorros":0},
 {"nome": "Cyclops","dateOfBirth":"1957-05-29T08:30:00.000Z", "local":"Anchorage", "usaCapa":false, "quantidadeGatos":0, "quantidadeCachorros":0}])
 
-12.	Delete 1 super-herói em que o nome seja igual a Capitão América.
+12.	Delete 1 super-herói em que o nome seja igual a Capitão América:
+
   db.herois.remove({"nome":"Capitão América"})
 
-13.	Atualize a quantidade de gatos em que o usuário com o registro de nome ‘Thor’ possui. Atualize a quantidade de gatos de ‘5’ para ‘7’.
+13.	Atualize a quantidade de gatos em que o usuário com o registro de nome ‘Thor’ possui. Atualize a quantidade de gatos de ‘5’ para ‘7’:
+
   db.herois.update({"_id": ObjectId("5f98b1898478e10aace05319")}, {$set:{"quantidadeGatos": 7}})
 
-14. Atualize o registro da Mulher Maravilha para capa = true;
+14. Atualize o registro da Mulher Maravilha para capa = true:
+
   db.herois.update({"_id": ObjectId("5f98b1898478e10aace0531e")}, {$set:{"usaCapa": true}})
 
-15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON.
-mongoexport --collection=herois --db=reprograma --out=C:\Program Files\MongoDB\Tools\100\bin\herois.json
+15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON:
+
+mongoexport --collection=herois --db=reprograma --out=mongoexport --collection=herois --db=reprograma --out=C:\Users\andre\Desktop\on6-xp-s12-intro-bd\Exercicio-para-casa\desafio-json\herois.json
+\herois.json
 
 Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json   
