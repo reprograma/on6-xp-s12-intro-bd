@@ -1,1 +1,0 @@
-# on6-xp-s12-intro-bd
