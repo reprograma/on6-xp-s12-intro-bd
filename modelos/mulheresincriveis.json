@@ -1,0 +1,38 @@
+[
+{
+    "nome": "Carolina Maria de Jesus",
+    "localNascimento": "Sacramento",
+    "profissao": "Escritora",
+    "anoNascimento": 1904.0,
+    "bio": "Uma das primeiras escritoras negras do Brasil, considerada uma das mais importantes escritoras do país."
+},
+{
+    "nome": "Maria Firmina dos Reis",
+    "localNascimento": "São Luís",
+    "profissao": "Escritora",
+    "anoNascimento": 1822.0,
+    "bio": "Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura."
+},
+{
+    "nome": "Antonieta de Barros",
+    "localNascimento": "Florianópolis",
+    "profissao": "Professora",
+    "anoNascimento": 1901.0,
+    "bio": "Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."
+},
+{
+    "nome": "Laudelina de Campos Melo",
+    "localNascimento": "Poços de Caldas",
+    "profissao": "Empregada Doméstica",
+    "anoNascimento": 1904.0,
+    "bio": "Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."
+},
+{
+    "nome": "Enedina Alves Marques", 
+    "localNascimento": "Curitiba",
+    "profissao": "Engenheira",
+    "anoNascimento": 1945,
+    "bio": "Primeira mulher negra a se formar em engenharia no Brasil."
+
+
+}]
