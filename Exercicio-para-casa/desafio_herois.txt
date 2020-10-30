@@ -1,0 +1,89 @@
+﻿Desafio
+Você receberá um arquivo com o formato JSON contendo alguns personagens de quadrinhos e/ou desenhos animados e você deverá realizar as alterações que foram solicitadas abaixo pelo cliente.
+
+1.	Selecione todos os registros.
+db.herois.find()
+
+2.	Selecione apenas o primeiro registro.
+db.herois.find($first).pretty()
+
+3.	Selecione todos os registros em que o nome seja igual a ‘Sabrina’ ou a quantidade de gatos seja igual a 2.
+db.herois.find({$or: [{"Sabrina", "quantidadeGatos": 2]}).pretty()
+
+4.	Selecione todos os registros em que o local de nascimento seja igual a Nova York e necessariamente que a quantidade de cachorros seja igual a 1.
+db.herois.find({"localNascimento": "Nova York", "quantidadeCachorros":{$ne:1}).pretty()
+
+5.	Selecione todos os registros em que a quantidade de gatos seja igual a 4 ou a quantidade de cachorros seja igual a 2.
+db.herois.find({$or:[{"quantidadeGatos":{$eq:4},"quantidadeCachorros":{$eq:2}]}).pretty()
+
+6.	Selecione todos os registros em que o nome comece com C.
+db.herois.find({"nome":/C/}).pretty()
+
+7.	Selecione todos os registros em que o nome comece com H.
+db.herois.find({"nome":/C/}).pretty()
+
+8.	Selecione todos os registros em que o nome termine com a.
+db.herois.find({"nome":/^a/i}).pretty()
+
+9.	Selecione todos os registros em que o nome contenha s.
+db.herois.find({"nome":/s/}).pretty()
+
+10.	Selecione todos os registros em que o nome contenha ‘e’ ou ‘o’.
+db.herois.find({$or:[{"nome":/e/,/o/}]).pretty()
+
+11.	Insira 3 novos super-heróis.
+db.herois.insertMany([{
+    "nome": "Mulher Gato",
+    "dateOfBirth": "1935-08-01T08:30:00.000Z",
+    "local": "Chicago",
+    "usaCapa": false,
+    "quantidadeGatos": 10,
+    "quantidadeCachorros": 0
+},
+{
+    "nome": "Flash",
+    "dateOfBirth": "1980-08-04T08:30:00.000Z",
+    "local": "América",
+    "usaCapa": false,
+    "quantidadeGatos": 5,
+    "quantidadeCachorros": 3
+},
+{
+    "nome": "Tempestade",
+    "dateOfBirth": "1910-01-27T08:30:00.000Z",
+    "local": "Irlanda",
+    "usaCapa": true,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 1
+}])
+
+12.	Delete 1 super-herói em que o nome seja igual a Capitão América.
+db.herois.remove({"nome": {$eq: "Capitão América"}})
+
+13.	Atualize a quantidade de gatos em que o usuário com o registro de nome ‘Thor’ possui. Atualize a quantidade de gatos de ‘5’ para ‘7’.
+db.herois.update({
+    "nome": "Thor",
+    "dateOfBirth": "1940-05-14T08:30:00.000Z",
+    "local": "Noruega",
+    "usaCapa": true,
+    "quantidadeGatos": 7,
+    "quantidadeCachorros": 3
+})
+
+14. 	Atualize o registro da Mulher Maravilha para capa = true;
+db.herois.update({
+    "nome": "Mulher Maravilha",
+    "dateOfBirth": "1941-12-08T08:30:00.000Z",
+    "local": "Themyscira",
+    "usaCapa": true,
+    "quantidadeGatos": 2,
+    "quantidadeCachorros": 7
+})
+
+15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON.
+mongoexport --collection=herois --db=reprograma --out="C:\Users\Reinaldo\Desktop\Reprograma\semana12\on6-xp-s12-intro-bd\modelos"
+
+Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json
+
+
+
