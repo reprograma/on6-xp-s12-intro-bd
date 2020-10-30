@@ -86,3 +86,4 @@ mongoexport --collection=herois --db=reprograma --out="C:\Users\Reinaldo\Desktop
 Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json
 
 
+
