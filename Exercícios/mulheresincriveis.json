@@ -1,0 +1,72 @@
+db.mulheresIncriveis.insertMany([
+
+{"nome" : "Maria Firmina dos Reis", "localNascimento" : "São Luís", "profissao" : "Escritora", "anoNascimento" : 1822, "bio" : "Considerada a primeira romancista negra brasileira, pioneira na crítica antiescravista da nossa literatura."},
+{"nome" : "Antonieta de Barros",  "localNascimento" : "Florianópolis", "profissao" : "Professora", "anoNascimento" : 1901, "bio" : "Professora, jornalista e política brasileira. A primeira negra brasileira a assumir um mandato popular."},
+{"nome" : "Laudelina de Campos Melo", "localNascimento" : "Poços de Caldas", "profissao" : "Empregada Doméstica", "anoNascimento" : 1904, "bio" : "Ativista do movimento negro, defensora dos direitos das mulheres e das empregadas domésticas, fundadora do primeiro sindicato de trabalhadoras domésticas do Brasil."},
+{"nome" : "Enedina Alves Marques", "localNascimento" : "Curitiba", "profissao" : "Engenheira", "anoNascimento" : 1945, "bio" : "Primeira mulher negra a se formar em engenharia no Brasil."}
+])
+
+//1.Selecione todos os registros.
+
+db.mulheresIncriveis.find()
+
+//2.Selecione todos os registros e deixe a com apresentação melhor visível.
+
+db.mulheresIncriveis.find().pretty()
+
+//3.Selecione todos os registros em que o nome seja igual a ‘Antonieta de Barros’.
+db.mulheresIncriveis.find({"nome":"Antonieta de Barros"}).pretty()
+
+//4.Selecione todos os registros em que o local de nascimento seja Curitiba.
+db.mulheresIncriveis.find({"localNascimento":"Curitiba"}).pretty()
+
+//5.Selecione todos os registros em que contenha a profissão igual a “Escritora”.
+db.mulheresIncriveis.find({"localNascimento":"Curitiba"}).pretty()
+
+db.mulheresIncriveis.find({"Profissão":"Professora"}).pretty()
+
+//6.Selecione todos os registros onde o nome seja igual a 'Carolina Maria de Jesus' e a profissão seja  'Escritora'.
+
+db.mulheresincriveis.find({"nome": "Carolina Maria de Jesus" , "profissao" : "Escritora" }).pretty()
+
+//7.Selecione todos os registros em que o local de nascimento não seja Sacramento e a profissão seja professora.
+não sei haha
+
+//8.Selecione todos os registros em que contenham o local de nascimento seja São Luís ou Poços de Calda.
+ //(Primeiro: realize o exercício com o operador ou e posteriormente realize o exercício com o operador in.)
+db.mulheresIncriveis.find({$or:[{"localNascimento":"São Luís"},{"localNascimento":"Poços de Caldas"}]}).pretty()
+
+//9.Pegue o exercício acima e inclua também aonde a data de nascimento seja 1904.
+//Utilizando os dois operadores juntos. $or e $in.
+
+db.mulheresIncriveis.find({"localNascimento":{$in:["São Luís","Poços de Caldas"]}}).pretty()
+
+db.mulheresIncriveis.find({"anoNascimento":1904},{"localNascimento":{$or:["São Luís", "Poços de Caldas"]}}).pretty()
+
+db.mulheresIncriveis.find({$or: [{"localNascimento":"Poços de Caldas", "anoNascimento": 1904}, {"localNascimento":"São Luís", "anoNascimento": 1904}]}).pretty()
+
+
+//10.Procure todas os registros em que tenham o local de nascimento seja Florianópolis ou a profissão seja empregada doméstica ou engenheira.*/
+
+db.mulheresincriveis.find({
+    $or : [
+        { "localNascimento": "Florianópolis" },
+        { "profissao" : { $in : [ "Empregada Doméstica", "Engenheira" ] }  }
+    ]
+    }).pretty()
+
+
+
+    ⦁	Selecione todos os registros em que os nomes contenham em qualquer parte da palavra a letra 'p'.
+    db.mulheresIncriveis.find({"nome":/p/}).pretty()
+
+    ⦁	Selecione todos os registros em que os nomes terminem com a letra 's'.
+    db.mulheresIncriveis.find({"nome":/$/s}).pretty()
+
+    ⦁	Selecione todos os registros em que os nomes terminem com a letra 'o'.
+    ⦁	Selecione todos os registros em que os nomes terminem com a letra 'w' ou 's'.
+    ⦁	Selecione todos os registros em que os nomes comecem com a letra 'A'.
+    ⦁	Selecione todos os registros em que os nomes comecem com a letra 'L' ou 'E'.
+
+    db.mulheresIncriveis.find({})
+    
