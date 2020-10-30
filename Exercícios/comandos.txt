@@ -31,6 +31,8 @@ db.mulheresincriveis.find({ "nome" : { $in : ["Nome A", "Nome B"] } }).pretty() 
 
 db.mulheresincriveis.find({ $or: [{ "nome" : "Nome A"}, {"nome" : "Nome B" }] }).pretty() - Procurar por um ou outro atributo
 
+
+
 MAIOR QUE
 db. mulheresincriveis.find({ "anoNascimento" : { $gt : 2018 } }).pretty()
 
@@ -62,7 +64,12 @@ db. mulheresincriveis.find({ "nome" : /$/ }).pretty() – um nome que termine co
 
 db. mulheresincriveis.find({ "nome" : /^a/ }).pretty() – um nome que comece com a.
 
-
+/*REGEX
+db.herois.find({ nome: { $regex: '[s$]', $options: 'i' } })
+"[s]" === /s/
+https://docs.mongodb.com/manual/reference/operator/query/regex/
+db.herois.find({ nome: { $regex: '[s]', $options: 'i' } })
+*/
 
 importanto data
 
@@ -73,3 +80,4 @@ mongoimport --db nomeDoDatabase --collection nomeDaCollection --jsonArray --file
 
 
 mongoimport --db reprograma --collection herois --jsonArray --file herois.json
+.count() > contar quantos elementos tem
