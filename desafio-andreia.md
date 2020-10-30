@@ -52,4 +52,4 @@ db.herois.insertMany([{"nome": "Tempestade","dateOfBirth":"1927-05-29T08:30:00.0
 15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON.
 mongoexport --collection=herois --db=reprograma --out=C:\Program Files\MongoDB\Tools\100\bin\herois.json
 
-Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json
+Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json   
