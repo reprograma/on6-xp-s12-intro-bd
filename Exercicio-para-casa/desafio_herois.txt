@@ -80,6 +80,7 @@ db.herois.update(
 )
 
 15.	Selecione todos os registros que foram trabalhados e exporte para um arquivo JSON.
+mongoexport --collection=herois --db=reprograma --out="C:\Users\phabl\Desktop\Reprograma\aula12\on6-xp-s12-intro-bd\Exercicio-para-casa\desafioHerois.json"
 
 
 Obs: no out= você passa o caminho da pasta em que quer armazenar o arquivo .json
