@@ -1,16 +1,16 @@
 # on6-xp-s12-intro-bd
 
-Desafio
+Desafio: 
 Você receberá um arquivo com o formato JSON contendo alguns personagens de quadrinhos e/ou desenhos animados e você deverá realizar as alterações que foram solicitadas abaixo pelo cliente.
 
-1.	Selecione todos os registros.
+1.	Selecione todos os registros:
     db.herois.find().pretty()
 
-2.	Selecione apenas o primeiro registro.
+2.	Selecione apenas o primeiro registro:
     db.herois.find().limit(1).pretty()
-    db.desafioHerois.findOne()
+    db.herois.findOne()
     
-3.	Selecione todos os registros em que o nome seja igual a ‘Sabrina’ ou a quantidade de gatos seja igual a 2.
+3.	Selecione todos os registros em que o nome seja igual a ‘Sabrina’ ou a quantidade de gatos seja igual a 2:
     db.herois.find({$or:[{ "nome": "Sabrina"} , { "quantidadeGatos":2}]}).pretty()
 
 4.	Selecione todos os registros em que o local de nascimento seja igual a Nova York e necessariamente que a quantidade de cachorros seja igual a 1.
