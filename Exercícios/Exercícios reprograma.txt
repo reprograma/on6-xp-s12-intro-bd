@@ -27,11 +27,23 @@ Utilizando os dois operadores juntos. $or e $in.
 Exercícios - Like
 
 1.Selecione todos os registros em que os nomes contenham em qualquer parte da palavra a letra 'p'.
+> db.mulheresincriveis.find({"nome":/p/}).pretty()
+
 2.Selecione todos os registros em que os nomes terminem com a letra 's'.
+db.mulheresincriveis.find({"nome":/s$/}).pretty()
+
 3.Selecione todos os registros em que os nomes terminem com a letra 'o'.
+db.mulheresincriveis.find({"nome":/o$/}).pretty()
+
 4.Selecione todos os registros em que os nomes terminem com a letra 'w' ou 's'.
+db.mulheresincriveis.find({$or:[{"nome":/w$/}, {"nome":/s$/}]}).pretty()
+
 5.Selecione todos os registros em que os nomes comecem com a letra 'A'.
+db.mulheresincriveis.find({"nome":/^A/i}).pretty()
+
+
 6.Selecione todos os registros em que os nomes comecem com a letra 'L' ou 'E'.
+db.mulheresincriveis.find({$or:[{"nome":/^L/}, {"nome":/^E/}]}).pretty()
 
 
 Exercícios $gt e $lt
