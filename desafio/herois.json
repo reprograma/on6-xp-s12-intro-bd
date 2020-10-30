@@ -1,0 +1,60 @@
+{"_id":{"$oid":"5f94d65c580b088bd0f5468d"},"nome":"Homem de Ferro","dateOfBirth":"1970-05-29T08:30:00.000Z","local":"Nova York","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94d65c580b088bd0f5468e"},"nome":"Hulk","dateOfBirth":"1969-12-18T08:30:00.000Z","local":"Novo México","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94d65c580b088bd0f5468f"},"nome":"Homem Aranha","dateOfBirth":"2001-08-10T08:30:00.000Z","local":"San Francisco","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94d65c580b088bd0f54690"},"nome":"Wolverine","dateOfBirth":"1880-02-17T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":3,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94d65c580b088bd0f54691"},"nome":"Shrek","dateOfBirth":"1785-04-06T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94d65c580b088bd0f54692"},"nome":"Deadpool","dateOfBirth":"1991-04-25T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94d65c580b088bd0f54693"},"nome":"Thor","dateOfBirth":"1940-05-14T08:30:00.000Z","local":"Noruega","usaCapa":true,"quantidadeGatos":7.0,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94d65c580b088bd0f54694"},"nome":"Visão","dateOfBirth":"1940-11-17T08:30:00.000Z","local":"Nova York","usaCapa":true,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94d65c580b088bd0f54695"},"nome":"Homem Formiga","dateOfBirth":"1962-01-27T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":5}
+{"_id":{"$oid":"5f94d65c580b088bd0f54696"},"nome":"Gavião Arqueiro","dateOfBirth":"1981-03-18T08:30:00.000Z","local":"Roma","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94d65c580b088bd0f54697"},"nome":"Mulher Maravilha","dateOfBirth":"1941-12-08T08:30:00.000Z","local":"Themyscira","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94d65c580b088bd0f54698"},"nome":"Pantera Negra","dateOfBirth":"1973-11-25T08:30:00.000Z","local":"Wakanda","usaCapa":false,"quantidadeGatos":7,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94d65c580b088bd0f54699"},"nome":"Batman","dateOfBirth":"1939-10-01T08:30:00.000Z","local":"Detroit","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f1"},"nome":"Batman","dateOfBirth":"1939-10-01T08:30:00.000Z","local":"Detroit","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f2"},"nome":"Pantera Negra","dateOfBirth":"1973-11-25T08:30:00.000Z","local":"Wakanda","usaCapa":false,"quantidadeGatos":7,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f3"},"nome":"Hulk","dateOfBirth":"1969-12-18T08:30:00.000Z","local":"Novo México","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f4"},"nome":"Homem Aranha","dateOfBirth":"2001-08-10T08:30:00.000Z","local":"San Francisco","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f5"},"nome":"Wolverine","dateOfBirth":"1880-02-17T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":3,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f6"},"nome":"Deadpool","dateOfBirth":"1991-04-25T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f7"},"nome":"Thor","dateOfBirth":"1940-05-14T08:30:00.000Z","local":"Noruega","usaCapa":true,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f8"},"nome":"Visão","dateOfBirth":"1940-11-17T08:30:00.000Z","local":"Nova York","usaCapa":true,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94dde1580b088bd0f546f9"},"nome":"Shrek","dateOfBirth":"1785-04-06T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94dde1580b088bd0f546fb"},"nome":"Homem Formiga","dateOfBirth":"1962-01-27T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":5}
+{"_id":{"$oid":"5f94dde1580b088bd0f546fc"},"nome":"Mulher Maravilha","dateOfBirth":"1941-12-08T08:30:00.000Z","local":"Themyscira","usaCapa":false,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94dde1580b088bd0f546fd"},"nome":"Homem de Ferro","dateOfBirth":"1970-05-29T08:30:00.000Z","local":"Nova York","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94dde1580b088bd0f546fe"},"nome":"Gavião Arqueiro","dateOfBirth":"1981-03-18T08:30:00.000Z","local":"Roma","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54719"},"nome":"Batman","dateOfBirth":"1939-10-01T08:30:00.000Z","local":"Detroit","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94dfa1580b088bd0f5471a"},"nome":"Pantera Negra","dateOfBirth":"1973-11-25T08:30:00.000Z","local":"Wakanda","usaCapa":false,"quantidadeGatos":7,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94dfa1580b088bd0f5471b"},"nome":"Hulk","dateOfBirth":"1969-12-18T08:30:00.000Z","local":"Novo México","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94dfa1580b088bd0f5471c"},"nome":"Homem Aranha","dateOfBirth":"2001-08-10T08:30:00.000Z","local":"San Francisco","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94dfa1580b088bd0f5471d"},"nome":"Wolverine","dateOfBirth":"1880-02-17T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":3,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94dfa1580b088bd0f5471e"},"nome":"Deadpool","dateOfBirth":"1991-04-25T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94dfa1580b088bd0f5471f"},"nome":"Thor","dateOfBirth":"1940-05-14T08:30:00.000Z","local":"Noruega","usaCapa":true,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54720"},"nome":"Visão","dateOfBirth":"1940-11-17T08:30:00.000Z","local":"Nova York","usaCapa":true,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54721"},"nome":"Shrek","dateOfBirth":"1785-04-06T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54722"},"nome":"Capitão América","dateOfBirth":"1920-07-04T08:30:00.000Z","local":"América","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":9}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54723"},"nome":"Homem Formiga","dateOfBirth":"1962-01-27T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":5}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54724"},"nome":"Mulher Maravilha","dateOfBirth":"1941-12-08T08:30:00.000Z","local":"Themyscira","usaCapa":false,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54725"},"nome":"Homem de Ferro","dateOfBirth":"1970-05-29T08:30:00.000Z","local":"Nova York","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94dfa1580b088bd0f54726"},"nome":"Gavião Arqueiro","dateOfBirth":"1981-03-18T08:30:00.000Z","local":"Roma","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94e01e580b088bd0f5472e"},"nome":"Pantera Negra","dateOfBirth":"1973-11-25T08:30:00.000Z","local":"Wakanda","usaCapa":false,"quantidadeGatos":7,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94e01e580b088bd0f5472f"},"nome":"Batman","dateOfBirth":"1939-10-01T08:30:00.000Z","local":"Detroit","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94e01e580b088bd0f54730"},"nome":"Hulk","dateOfBirth":"1969-12-18T08:30:00.000Z","local":"Novo México","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94e01e580b088bd0f54731"},"nome":"Homem Aranha","dateOfBirth":"2001-08-10T08:30:00.000Z","local":"San Francisco","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94e01e580b088bd0f54732"},"nome":"Deadpool","dateOfBirth":"1991-04-25T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94e01e580b088bd0f54733"},"nome":"Wolverine","dateOfBirth":"1880-02-17T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":3,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94e01e580b088bd0f54734"},"nome":"Visão","dateOfBirth":"1940-11-17T08:30:00.000Z","local":"Nova York","usaCapa":true,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f94e01e580b088bd0f54735"},"nome":"Thor","dateOfBirth":"1940-05-14T08:30:00.000Z","local":"Noruega","usaCapa":true,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f94e01e580b088bd0f54736"},"nome":"Capitão América","dateOfBirth":"1920-07-04T08:30:00.000Z","local":"América","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":9}
+{"_id":{"$oid":"5f94e01e580b088bd0f54737"},"nome":"Homem Formiga","dateOfBirth":"1962-01-27T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":5}
+{"_id":{"$oid":"5f94e01e580b088bd0f54738"},"nome":"Shrek","dateOfBirth":"1785-04-06T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f94e01e580b088bd0f54739"},"nome":"Gavião Arqueiro","dateOfBirth":"1981-03-18T08:30:00.000Z","local":"Roma","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f94e01e580b088bd0f5473a"},"nome":"Mulher Maravilha","dateOfBirth":"1941-12-08T08:30:00.000Z","local":"Themyscira","usaCapa":false,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f94e01e580b088bd0f5473b"},"nome":"Homem de Ferro","dateOfBirth":"1970-05-29T08:30:00.000Z","local":"Nova York","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f9c86fb04d40fde4ed7819f"},"nome":"Raphaela C O Britto","dateOfBirth":"1997-06-30","local":"São Paulo","usaCapa":true,"quantidadeGatos":0.0,"quantidadeCachorros":1.0}
+{"_id":{"$oid":"5f9c86fb04d40fde4ed781a0"},"nome":"Diego O Britto","dateOfBirth":"2000-05-30","local":"São Paulo","usaCapa":false,"quantidadeGatos":0.0,"quantidadeCachorros":1.0}
+{"_id":{"$oid":"5f9c86fb04d40fde4ed781a1"},"nome":"Claudia M O Britto","dateOfBirth":"1969-05-15","local":"São Paulo","usaCapa":true,"quantidadeGatos":0.0,"quantidadeCachorros":1.0}
+{"_id":{"$oid":"5f9c8d0504d40fde4ed781a2"},"nome":"Raphaela C O Britto","dateOfBirth":"1997-06-30","local":"São Paulo","usaCapa":true,"quantidadeGatos":0.0,"quantidadeCachorros":1.0}
+{"_id":{"$oid":"5f9c8d0504d40fde4ed781a3"},"nome":"Diego O Britto","dateOfBirth":"2000-05-30","local":"São Paulo","usaCapa":false,"quantidadeGatos":0.0,"quantidadeCachorros":1.0}
+{"_id":{"$oid":"5f9c8d0504d40fde4ed781a4"},"nome":"Claudia M O Britto","dateOfBirth":"1969-05-15","local":"São Paulo","usaCapa":true,"quantidadeGatos":0.0,"quantidadeCachorros":1.0}
