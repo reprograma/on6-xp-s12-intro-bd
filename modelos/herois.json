@@ -1,0 +1,113 @@
+[{
+    "nome": "Batman",
+    "dateOfBirth": "1939-10-01T08:30:00.000Z",
+    "local": "Detroit",
+    "usaCapa": true,
+    "quantidadeGatos": 2,
+    "quantidadeCachorros": 7
+},
+{
+    "nome": "Capitão América",
+    "dateOfBirth": "1920-07-04T08:30:00.000Z",
+    "local": "América",
+    "usaCapa": false,
+    "quantidadeGatos": 0,
+    "quantidadeCachorros": 9
+},
+{
+    "nome": "Homem Formiga",
+    "dateOfBirth": "1962-01-27T08:30:00.000Z",
+    "local": "Londres",
+    "usaCapa": false,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 5
+},
+{
+    "nome": "Shrek",
+    "dateOfBirth": "1785-04-06T08:30:00.000Z",
+    "local": "Londres",
+    "usaCapa": false,
+    "quantidadeGatos": 5,
+    "quantidadeCachorros": 2
+},
+{
+    "nome": "Homem de Ferro",
+    "dateOfBirth": "1970-05-29T08:30:00.000Z",
+    "local": "Nova York",
+    "usaCapa": false,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 1
+},
+{
+    "nome": "Mulher Maravilha",
+    "dateOfBirth": "1941-12-08T08:30:00.000Z",
+    "local": "Themyscira",
+    "usaCapa": false,
+    "quantidadeGatos": 2,
+    "quantidadeCachorros": 7
+},
+{
+    "nome": "Gavião Arqueiro",
+    "dateOfBirth": "1981-03-18T08:30:00.000Z",
+    "local": "Roma",
+    "usaCapa": false,
+    "quantidadeGatos": 1,
+    "quantidadeCachorros": 0
+},
+{
+    "nome": "Pantera Negra",
+    "dateOfBirth": "1973-11-25T08:30:00.000Z",
+    "local": "Wakanda",
+    "usaCapa": false,
+    "quantidadeGatos": 7,
+    "quantidadeCachorros": 3
+},
+{
+    "nome": "Hulk",
+    "dateOfBirth": "1969-12-18T08:30:00.000Z",
+    "local": "Novo México",
+    "usaCapa": false,
+    "quantidadeGatos": 1,
+    "quantidadeCachorros": 1
+},
+{
+    "nome": "Homem Aranha",
+    "dateOfBirth": "2001-08-10T08:30:00.000Z",
+    "local": "San Francisco",
+    "usaCapa": false,
+    "quantidadeGatos": 0,
+    "quantidadeCachorros": 2
+},
+{
+    "nome": "Wolverine",
+    "dateOfBirth": "1880-02-17T08:30:00.000Z",
+    "local": "Canadá",
+    "usaCapa": false,
+    "quantidadeGatos": 3,
+    "quantidadeCachorros": 0
+},
+{
+    "nome": "Deadpool",
+    "dateOfBirth": "1991-04-25T08:30:00.000Z",
+    "local": "Canadá",
+    "usaCapa": false,
+    "quantidadeGatos": 5,
+    "quantidadeCachorros": 3
+},
+{
+    "nome": "Thor",
+    "dateOfBirth": "1940-05-14T08:30:00.000Z",
+    "local": "Noruega",
+    "usaCapa": true,
+    "quantidadeGatos": 5,
+    "quantidadeCachorros": 3
+},
+{
+    "nome": "Visão",
+    "dateOfBirth": "1940-11-17T08:30:00.000Z",
+    "local": "Nova York",
+    "usaCapa": true,
+    "quantidadeGatos": 4,
+    "quantidadeCachorros": 1
+}
+]
