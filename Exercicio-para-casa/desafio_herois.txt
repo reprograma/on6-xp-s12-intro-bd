@@ -20,10 +20,10 @@ db.herois.find({ "local" : "Nova York", "quantidadeCachorros" : 1 }).pretty()
 db.herois.find({ $or: [{ "quantidadeGatos" : 4}, {"quantidadeCachorros" : 2 }] }).pretty()
 
 6.	Selecione todos os registros em que o nome comece com C.
-db.herois.find({ "nome" : /^C/ }).pretty()  
+db.herois.find({ "nome" : /^c/i }).pretty()  
 
 7.	Selecione todos os registros em que o nome comece com H.
-db.herois.find({ "nome" : /^H/ }).pretty() 
+db.herois.find({ "nome" : /^h/i }).pretty() 
 
 8.	Selecione todos os registros em que o nome termine com a.
 db.herois.find({ "nome" : /a$/ }).pretty() 
