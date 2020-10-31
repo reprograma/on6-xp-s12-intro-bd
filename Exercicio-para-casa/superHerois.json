@@ -1,0 +1,16 @@
+{"_id":{"$oid":"5f99ff6e12fcea3121b47795"},"nome":"Homem Formiga","dateOfBirth":"1962-01-27T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":5}
+{"_id":{"$oid":"5f99ff6e12fcea3121b47796"},"nome":"Shrek","dateOfBirth":"1785-04-06T08:30:00.000Z","local":"Londres","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f99ff6e12fcea3121b47797"},"nome":"Batman","dateOfBirth":"1939-10-01T08:30:00.000Z","local":"Detroit","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f99ff6e12fcea3121b47799"},"nome":"Gavião Arqueiro","dateOfBirth":"1981-03-18T08:30:00.000Z","local":"Roma","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f99ff6e12fcea3121b4779a"},"nome":"Hulk","dateOfBirth":"1969-12-18T08:30:00.000Z","local":"Novo México","usaCapa":false,"quantidadeGatos":1,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f99ff6e12fcea3121b4779b"},"nome":"Thor","dateOfBirth":"1940-05-14T08:30:00.000Z","local":"Noruega","usaCapa":true,"quantidadeGatos":7.0,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f99ff6e12fcea3121b4779c"},"nome":"Deadpool","dateOfBirth":"1991-04-25T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":5,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f99ff6e12fcea3121b4779d"},"nome":"Homem Aranha","dateOfBirth":"2001-08-10T08:30:00.000Z","local":"San Francisco","usaCapa":false,"quantidadeGatos":0,"quantidadeCachorros":2}
+{"_id":{"$oid":"5f99ff6e12fcea3121b4779e"},"nome":"Wolverine","dateOfBirth":"1880-02-17T08:30:00.000Z","local":"Canadá","usaCapa":false,"quantidadeGatos":3,"quantidadeCachorros":0}
+{"_id":{"$oid":"5f99ff6e12fcea3121b4779f"},"nome":"Homem de Ferro","dateOfBirth":"1970-05-29T08:30:00.000Z","local":"Nova York","usaCapa":false,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f99ff6e12fcea3121b477a0"},"nome":"Pantera Negra","dateOfBirth":"1973-11-25T08:30:00.000Z","local":"Wakanda","usaCapa":false,"quantidadeGatos":7,"quantidadeCachorros":3}
+{"_id":{"$oid":"5f99ff6e12fcea3121b477a1"},"nome":"Mulher Maravilha","dateOfBirth":"1941-12-08T08:30:00.000Z","local":"Themyscira","usaCapa":true,"quantidadeGatos":2,"quantidadeCachorros":7}
+{"_id":{"$oid":"5f99ff6e12fcea3121b477a2"},"nome":"Visão","dateOfBirth":"1940-11-17T08:30:00.000Z","local":"Nova York","usaCapa":true,"quantidadeGatos":4,"quantidadeCachorros":1}
+{"_id":{"$oid":"5f9a0449da3d1a704bc53f01"},"nome":"Viúva Negra","dateOfBirth":"1984-04-24T04:30:00.000Z","local":"Volgogrado","usaCapa":false,"quantidadeGatos":1.0,"quantidadeCachorros":1.0}
+{"_id":{"$oid":"5f9a0449da3d1a704bc53f02"},"nome":"Capitã Marvel","dateOfBirth":"1968-07-18T07:30:00.000Z","local":"boston","usaCapa":true,"quantidadeGatos":0.0,"quantidadeCachorros":2.0}
+{"_id":{"$oid":"5f9a0449da3d1a704bc53f03"},"nome":"Aquaman","dateOfBirth":"1989-01-12T00:30:00.000Z","local":"Atlântida","usaCapa":false,"quantidadeGatos":5.0,"quantidadeCachorros":5.0}
