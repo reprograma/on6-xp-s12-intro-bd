@@ -1,0 +1,19 @@
+Import do json
+C:\Program Files\MongoDB\Tools\100\bin>mongoimport --db reprograma --collection herois --jsonArray --file herois.json
+2020-10-31T18:20:54.267-0300    connected to: mongodb://localhost/
+2020-10-31T18:20:54.766-0300    14 document(s) imported successfully. 0 document(s) failed to import.
+
+1.	Selecione todos os registros.
+db.herois.find()
+db.herois.find().pretty()
+
+2.  Selecione apenas o primeiro registro
+
+3.	Selecione todos os registros em que o nome seja igual a ‘Sabrina’ ou a quantidade de gatos seja igual a 2.
+ db.herois.find({
+
+	$or : [
+		{ "name": "Sabrina" },
+		{ ""quantidadeGatos": { $in : [ 2 ] }  }
+]
+}).pretty()
